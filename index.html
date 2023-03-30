@@ -3,16 +3,81 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Bootstrap demo</title>
   </head>
 <body>
-    <header>
-        
+    <header >
+        <nav class="d-flex p-3 align-items-center ">
+            <img class="" src="./img/logo.svg" alt="logo">
+            <div class="input-group ms-2  ">
+                <button class="btn btn-outline-secondary borderNone bgGray" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="borderNone bgGray shadowNone rounded-end widthSrc" type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            </div>
+            <i class="ms-3 scale fa-solid fa-list-ul"></i>
+            <i class="ms-3 scale fa-solid fa-circle-question"></i>
+            <i class="ms-3 scale fa-solid fa-ellipsis-vertical"></i>
+            <i class="ms-3 scale colorGold fa-solid fa-bell"></i>
+        </nav>
     </header>
-    <main>
 
+    <main>
+        <div class="d-flex">
+            <aside class="sideBg sideDim ">
+                <div class="d-flex flex-column justify-content-between sideDim  p-4">
+                    <div class="text-white d-flex flex-column"> 
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                            <span class="ms-2">Home</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span class="ms-2">Stats</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-signal"></i>
+                            <span class="ms-2">Signals</span>
+                        </div>
+                    </div>
+                    <div class="text-white">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="ms-2">Admin</span>
+                        
+                    </div>
+                </div>
+            </aside>
+            <section class="secDim">
+                <div class="py-3 px-2 bacgoundColorAzz d-flex justify-content-between align-items-center">
+                    <div>
+                        <div class="d-flex align-items-baseline">
+                            <h2 class="text-white">Boolean</h2>
+                            <span class="badge rounded-pill colorPill ms-2">Piano blaze</span>
+                        </div>
+                        <div>
+                            <span class="badge rounded-pill colorPill">3 app</span>
+                            <span class="text-white">>></span>
+                            <span class="badge rounded-pill colorPill">Primary</span>
+                            <span class="badge rounded-pill colorPill">Primary</span>
+                            <span class="badge rounded-pill colorPill">Primary</span>
+                        </div>
+                    </div >
+                    <div class="d-flex flex-column">
+                        <span class="text-white">Studenti online negli ultimi 30 minuti</span>
+                        <h2 class="text-white">125</h2>
+                    </div>
+                    <div>
+                        <span class="text-white">Nuovo Studente</span>
+                        <button class="addStudentButton rounded text-white fs-5 fw-bold ms-3"> + </button>
+
+                    </div>
+                </div>
+
+            </section>
+        </div>
     </main>
+
     <footer>
         
     </footer>

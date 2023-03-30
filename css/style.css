@@ -1,0 +1,72 @@
+/* debug */
+
+
+
+
+
+
+
+
+
+
+
+
+.borderNone{
+    border: transparent !important;
+} 
+:focus-visible {
+    outline: none !important;
+}
+
+.secDim {
+    width: 100%;
+    height: calc(100vh - 68px) ;
+    overflow-y: auto;
+    
+}
+
+.widthSrc {
+    width : calc(100% - 40px) ;
+}
+
+.sideDim {
+    width: 150px;
+    height: calc(100vh - 68px) ;
+}
+
+.bgGray {
+    background-color: #E5E5E5 !important;
+}
+
+.colorGold {
+    color: gold;
+}
+
+.scale {
+    scale: 1.1;
+}
+
+.sideBg {
+    background-image: url(../img/sidebar-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #051E34 ;
+}
+
+.bacgoundColorAzz {
+    background-color:#1B72E8 ;
+}
+
+.colorPill {
+    background-color:#165BBA ;
+    color: white;
+}
+
+.addStudentButton {
+    background-color: transparent;
+    border:1px solid white;
+    width: 35px !important;
+    height: 35px !important;
+    text-align: center;
+
+}
