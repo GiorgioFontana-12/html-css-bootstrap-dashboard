@@ -12,13 +12,19 @@
     <header >
         <nav class="d-flex p-3 align-items-center ">
             <img class="" src="./img/logo.svg" alt="logo">
+            <div class="imgSquare35 height100 p0 m0">
+                <img class="width100" src="./img/mobile-logo.png" alt="mobileLogo">
+            </div>
             <div class="input-group ms-2  ">
                 <button class="btn btn-outline-secondary borderNone bgGray" type="button" id="button-addon1"><i class="fa-solid fa-magnifying-glass"></i></button>
                 <input class="borderNone bgGray shadowNone rounded-end widthSrc" type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Example text with button addon" aria-describedby="button-addon1">
             </div>
-            <i class="ms-3 scale fa-solid fa-list-ul"></i>
-            <i class="ms-3 scale fa-solid fa-circle-question"></i>
-            <i class="ms-3 scale fa-solid fa-ellipsis-vertical"></i>
+
+            <div class="vanish d-flex align-items-center">
+                <i class="ms-3 scale fa-solid fa-list-ul"></i>
+                <i class="ms-3 scale fa-solid fa-circle-question"></i>
+                <i class="ms-3 scale fa-solid fa-ellipsis-vertical"></i>
+            </div>
             <i class="ms-3 scale colorGold fa-solid fa-bell"></i>
         </nav>
     </header>
@@ -26,8 +32,8 @@
     <main>
         <div class="d-flex">
             <aside class="sideBg sideDim ">
-                <div class="d-flex flex-column justify-content-between sideDim  p-4">
-                    <div class="text-white d-flex flex-column"> 
+                <div class="d-flex flex-column justify-content-between sideDim  p-2">
+                    <div class="text-white d-flex flex-column alignItemCenter"> 
                         <div>
                             <i class="fa-solid fa-house"></i>
                             <span class="ms-2">Home</span>
@@ -41,16 +47,16 @@
                             <span class="ms-2">Signals</span>
                         </div>
                     </div>
-                    <div class="text-white">
+                    <div class="text-white d-flex align-items-baseline justifyContentCenter ">
                         <i class="fa-solid fa-gear"></i>
                         <span class="ms-2">Admin</span>
                     </div>
                 </div>
             </aside>
             <section class="secDim">
-                <div class="py-3 px-2 bacgoundColorAzz d-flex justify-content-between align-items-center">
+                <div class="py-3 px-2 bacgoundColorAzz d-flex justify-content-between align-items-center flex-wrap">
                     <div>
-                        <div class="d-flex align-items-baseline">
+                        <div class="d-flex align-items-baseline ">
                             <h2 class="text-white">Boolean</h2>
                             <span class="badge rounded-pill colorPill ms-2">Piano blaze</span>
                         </div>
@@ -71,8 +77,8 @@
                         <button class="addStudentButton rounded text-white fs-5 fw-bold ms-3"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
-                <div class="p-3 d-flex col-fluid ">
-                    <div class="d-flex flex-column col-8 p-2">
+                <div class="p-3 d-flex col-fluid flex-wrap">
+                    <div class="d-flex flex-column col-12 col-lg-8 p-2">
                         <div class="card width100" style="width: 18rem;">
                             <div class="card-header">
                               <h2>Prossime Classi</h2>
@@ -83,8 +89,8 @@
                                     <thead>
                                       <tr>
                                         <th scope="col">Nome</th>
-                                        <th scope="col">Data inizio</th>
-                                        <th scope="col">ROI</th>
+                                        <th class="vanish" scope="col">Data inizio</th>
+                                        <th class="vanish" scope="col">ROI</th>
                                         <th scope="col">Stato</th>
                                         <th scope="col">Azioni</th>
                                       </tr>
@@ -92,21 +98,21 @@
                                     <tbody>
                                       <tr>
                                         <th scope="row" class="d-flex align-items-center widthAuto"><div class="imgSquare me-2"><img class="width100" src="./img/class-avatar.jpg" alt=""> </div> Classe 75 </th>
-                                        <td class="width50px">Mark</td>
-                                        <td class="width50px">Otto</td>
+                                        <td class="width50px vanish">Mark</td>
+                                        <td class="width50px vanish">Otto</td>
                                         <td class="width50px">@mdo</td>
                                         <td class="width50px">@mdo</td>
                                       </tr>
                                       <tr>
                                         <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
+                                        <td class="vanish">Jacob</td>
+                                        <td class="vanish">Thornton</td>
                                         <td>@fat</td>
                                       </tr>
                                       <tr>
                                         <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
+                                        <td class="vanish">Larry</td>
+                                        <td class="vanish">the Bird</td>
                                         <td>@twitter</td>
                                       </tr>
                                     </tbody>
@@ -153,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column col-4 p-2">
+                    <div class="d-flex flex-column col-12 col-lg-4 p-2">
                         <div class="card width100" style="width: 18rem;">
                             <div class="card-header">
                               <h2>Todo</h2>

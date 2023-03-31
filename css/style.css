@@ -7,7 +7,9 @@
 
 
 
-
+header {
+    height: 70px;
+}
 
 
 
@@ -23,7 +25,7 @@
 }
 .secDim {
     width: 100%;
-    height: calc(100vh - 68px) ;
+    height: calc(100vh - 70px) ;
     overflow-y: auto;
     
 }
@@ -34,7 +36,7 @@
 
 .sideDim {
     width: 150px;
-    height: calc(100vh - 68px) ;
+    height: calc(100vh - 70px) ;
 }
 
 .bgGray {
@@ -74,6 +76,12 @@
 
 }
 
+.p0{
+    padding: 0 !important;
+}
+.m0{
+    margin: 0 !important;
+}
 
 .imgSquare {
     background-color: white;
@@ -81,12 +89,56 @@
     height: 25px;
 }
 
+.imgSquare35{
+    width: 65px;
+    height: 65px;
+}
+.height100{
+    height: 100%;
+}
+
 
 
 .width50px{
-    width: 120px;
+    width: 80px;
 }
 
 .widthAuto{
     width: auto;
 }
+.imgSquare35 {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .sideDim {
+        width: 50px;
+    }
+    aside span {
+        display: none;
+    }
+    .imgSquare35{
+        display: block;
+    }
+    nav > img {
+        display: none;
+    }
+
+    nav .vanish {
+        display: none !important;
+    }
+    .vanish {
+        display: none !important;
+    }
+    .alignItemCenter{
+        align-items: center;
+    }
+    .justifyContentCenter {
+        justify-content: center;
+    }
+    
+
+}
+
+
