@@ -73,3 +73,20 @@
     text-align: center;
 
 }
+
+
+.imgSquare {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+}
+
+
+
+.width50px{
+    width: 120px;
+}
+
+.widthAuto{
+    width: auto;
+}
