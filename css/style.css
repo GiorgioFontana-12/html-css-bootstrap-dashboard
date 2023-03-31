@@ -18,6 +18,9 @@
     outline: none !important;
 }
 
+.width100 {
+    width: 100% !important;
+}
 .secDim {
     width: 100%;
     height: calc(100vh - 68px) ;
