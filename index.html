@@ -74,7 +74,8 @@
                     </div>
                     <div>
                         <span class="text-white">Nuovo Studente</span>
-                        <button class="addStudentButton rounded text-white fs-5 fw-bold ms-3"><i class="fa-solid fa-plus"></i></button>
+                        <button class="btn btn-primary addStudentButton ms-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                     </div>
                 </div>
                 <div class="p-3 d-flex col-fluid flex-wrap">
@@ -97,7 +98,7 @@
                                     </thead>
                                     <tbody>
                                       <tr>
-                                        <th scope="row" class="d-flex align-items-center widthAuto"><div class="imgSquare me-2"><img class="width100" src="./img/class-avatar.jpg" alt=""> </div> Classe 75 </th>
+                                        <th class="d-flex flex-wrap" scope="row" class="d-flex align-items-center widthAuto"><div class="imgSquare me-2"><img class="width100" src="./img/class-avatar.jpg" alt=""> </div> Classe 75 </th>
                                         <td class="width50px vanish">Mark</td>
                                         <td class="width50px vanish">Otto</td>
                                         <td class="width50px">@mdo</td>
@@ -184,7 +185,35 @@
                         <div class="card width100 mt-3" style="width: 18rem;">
                             <div class="p-3 width100">
                                 <div class="card width100" style="width: 18rem;">
-                                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                  <div>
+                                    <canvas id="myChart"></canvas>
+                                  </div>
+                                  
+                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                  
+                                  <script>
+                                    const ctx = document.getElementById('myChart');
+                                  
+                                    new Chart(ctx, {
+                                      type: 'bar',
+                                      data: {
+                                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                        datasets: [{
+                                          label: '# of Votes',
+                                          data: [12, 19, 3, 5, 2, 3],
+                                          borderWidth: 1
+                                        }]
+                                      },
+                                      options: {
+                                        scales: {
+                                          y: {
+                                            beginAtZero: true
+                                          }
+                                        }
+                                      }
+                                    });
+                                  </script>
+                                  
                                     <div class="card-body">
                                       <h5 class="card-title">Card title</h5>
                                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -202,15 +231,76 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
                 </div>
             </section>
         </div>
     </main>
+    <section>
+    
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltipUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername"
+                  aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">State</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </section>
 
     <footer>
         

@@ -68,12 +68,7 @@ header {
 }
 
 .addStudentButton {
-    background-color: transparent;
-    border:1px solid white;
-    width: 35px !important;
-    height: 35px !important;
-    text-align: center;
-
+    border:1px solid white !important;
 }
 
 .p0{
@@ -100,7 +95,7 @@ header {
 
 
 .width50px{
-    width: 80px;
+    max-width: 80px;
 }
 
 .widthAuto{
